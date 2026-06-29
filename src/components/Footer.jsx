@@ -222,7 +222,7 @@ const Footer = () => {
 
             {/* LINKEDIN */}
             <a
-              href="www.linkedin.com/in/vipraoil-green-energy-8b3428414
+              href="www.linkedin.com/in/vipraoil-green-energy-8b3428414"
 
 "
               className="
