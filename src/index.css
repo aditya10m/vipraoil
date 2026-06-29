@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background: #f5f5f7;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #1d1d1f;
+}
+
+.glass {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(20px);
+}
+
+.gradient-bg {
+  background:
+    radial-gradient(circle at top left, rgba(5,150,105,0.18), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(170,130,10,0.12), transparent 30%),
+    #f5f5f7;
+}
+
+.noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+.luxury-title {
+  line-height: 1.1;
+  letter-spacing: -2px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.glow {
+  box-shadow: 0 0 80px rgba(5,150,105,0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Global typography safety layout constraints to prevent text overflowing containers */
+h1, h2, h3, h4, h5, h6, p, a, span, button {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Responsive adjustments for core luxury title sizing */
+@media (max-width: 480px) {
+  .luxury-title {
+    font-size: 32px !important;
+    line-height: 1.1 !important;
+    letter-spacing: -1px !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .luxury-title {
+    font-size: 46px !important;
+    line-height: 1.05 !important;
+    letter-spacing: -1.5px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .luxury-title {
+    font-size: 56px !important;
+    line-height: 1 !important;
+    letter-spacing: -2px !important;
+  }
+}
